@@ -38,7 +38,6 @@ class Console:
         self.standard_source.nodelay(1)
         curses.cbreak()
         curses.curs_set(0)
-        print("Memvis")
         pad = curses.newwin(curses.LINES, curses.COLS, 1, 3)
         while self.key not in [ord('q'), ord('Q')]:
             self.standard_source.keypad(1)
@@ -66,7 +65,6 @@ class Console:
             pad.refresh()
 
             pad.move(0, 0)
-            self.standard_source.clear()
             if self.key == JUMP:
                 self.__jump_to_address(pad)
             time.sleep(1 / self.frame_rate)
