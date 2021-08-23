@@ -13,7 +13,7 @@ void function2() {
     function3();
 }
 
-void functio1() {
+void function1() {
     char c[] = "First function call memory.";
     function2();
 }
@@ -21,6 +21,6 @@ void functio1() {
 int main() {
     char c[] = "Main function call memory.";
     while(1) {
-        functio1();
+        function1();
     }
 }
