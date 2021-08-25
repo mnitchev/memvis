@@ -1,6 +1,6 @@
 # memvis
 
-Memvis is a process memory visualizer. It will attempt to read all of the
+Memvis is a Linux process memory visualizer. It will attempt to read all of the
 memory pages of a process and print the memory data in a table format, where
 each address's data is presented in hex format. If an address' value is an
 ascii character, memvis will by default print the ascii character (this can be
@@ -13,6 +13,22 @@ mapped memory regions are read and can be visualized. To learn more about what
 maps are available and how they are read see
 [/proc/[pid]/maps](https://man7.org/linux/man-pages/man5/proc.5.html) and
 [/proc/[pid]/mem](https://man7.org/linux/man-pages/man5/proc.5.html).
+ 
+## Installation and running
+
+ To install dependencies run:
+
+ ```shell
+ sudo python3 setup.py install
+ ```
+
+ To run memvis do:
+
+ ```shell
+ sudo python3 memvis/main.py [options]
+ ```
+
+ **_NOTE:_** To view another process' memory, root privilleges will be required (hence the sudo).
 
 ## Usage
 
