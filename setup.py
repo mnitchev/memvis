@@ -9,8 +9,13 @@ setup(
     author='Mario Nitchev',
     author_email='mail@ala.bala',
     description='Memory Visualisation',
+    entry_points = {
+        'console_scripts': [
+            'memvis = memvis.memvis:run',
+        ],
+    },
     license='',
     keywords='memory, visualisation, console, proc',
-    url='https://bitbucket.org/mnitchev/memvis/',
+    url='https://github.com/mnitchev/memvis/',
     test_suite='tests'
 )

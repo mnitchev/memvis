@@ -13,22 +13,22 @@ mapped memory regions are read and can be visualized. To learn more about what
 maps are available and how they are read see
 [/proc/[pid]/maps](https://man7.org/linux/man-pages/man5/proc.5.html) and
 [/proc/[pid]/mem](https://man7.org/linux/man-pages/man5/proc.5.html).
- 
+
 ## Installation and running
 
- To install dependencies run:
+To install dependencies run:
 
- ```shell
- sudo python3 setup.py install
- ```
+```shell
+sudo pip install .
+```
 
- To run memvis do:
+To run memvis do:
 
- ```shell
- sudo python3 memvis/main.py [options]
- ```
+```shell
+sudo memvis [options]
+```
 
- **_NOTE:_** To view another process' memory, root privilleges will be required (hence the sudo).
+**_NOTE:_** To view another process' memory, root privilleges will be required (hence the sudo).
 
 ## Usage
 

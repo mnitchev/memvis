@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import argparse
 import logging
 import sys
@@ -34,7 +32,7 @@ def verify_arguments(args):
     pass
 
 
-def main():
+def run():
     formatter = logging.Formatter(
         '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logger = logging.getLogger()
@@ -57,4 +55,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run()
